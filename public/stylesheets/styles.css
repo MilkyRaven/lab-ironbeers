@@ -5,3 +5,38 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+* {
+margin: auto 0;
+padding: 0;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    background-color:#2081c3;
+    display: flex;
+    flex-flow: nowrap;
+}
+
+nav > a {
+   text-decoration: none;
+   color: #f7f9f9;
+   padding: 30px;
+}
+
+.main {
+    margin: 100px;
+    display: flex;
+    justify-content: center;
+
+
+}
+.beer-graph {
+    height: 300px;
+}
+
+.beer-card > img {
+    height: 250px;
+    margin: 100px;
+    display: flex;
+}

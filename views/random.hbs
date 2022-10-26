@@ -1,9 +1,5 @@
-<img src="{{this.image_url}}" alt="beer image">
-<h2>Hello, my name is {{this.name}}</h2>
-<p>{{this.description}}</p>
+{{> beerpartial beer}}
 <h3>Food Pairing:</h3>
-<h3>Tagline</h3>
-<p>{{this.tagline}}</p>
-<p>{{this.food_pairing}}</p>
+<p>{{beer.food_pairing}}</p>
 <h3>Brewers Tips:</h3>
-<p>{{this.brewers_tips}}</p>
+<p>{{beer.brewers_tips}}</p>
