@@ -45,6 +45,9 @@ width: 200px;
 height: 200px;
 }
 
+.beer-card {
+    display: flex;
+}
 .beer-card > img {
     height: 250px;
     margin: 100px;

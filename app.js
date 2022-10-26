@@ -41,10 +41,24 @@ app.get('/random', async (req, res) => {
     const randomBeer = await punkAPI.getRandom()
     console.log(randomBeer)
     const data = {
-      beer: randomBeer[0]
+      beer: randomBeer[0],
+      displayInfo: true
   
     }
     res.render('random', data);
+  }
+  catch(error){
+    console.log(error)
+  }
+});
+
+app.get('/beers/:id', async (req, res) => {
+  try {
+    const beerID = req.params.id;
+    const foundBeer = await punkAPI.getBeer(beerID)
+
+    console.log(foundBeer);
+    res.render('beersID', {foundBeer});
   }
   catch(error){
     console.log(error)
