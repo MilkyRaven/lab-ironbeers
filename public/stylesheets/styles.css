@@ -27,12 +27,22 @@ nav > a {
 .main {
     margin: 100px;
     display: flex;
-    justify-content: center;
-
-
+    flex-flow: column;
+    align-items: center;
 }
+
+.main > a {
+    text-decoration: none;
+    background-color: #2081c3;
+    color: #f7f9f9;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 5px;
+}
+
 .beer-graph {
-    height: 300px;
+width: 200px;
+height: 200px;
 }
 
 .beer-card > img {
